@@ -49,4 +49,4 @@ COPY --from=builder /app/prisma ./prisma
 EXPOSE 3000
 
 # Sync schema safely on start (idempotent)
-CMD ["sh", "-c", "npx prisma db push --skip-generate && npm start"]
+CMD ["sh", "-c", "npx prisma db push --skip-generate && next start -p $PORT -H 0.0.0.0"]

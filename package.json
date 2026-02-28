@@ -10,7 +10,6 @@
     "build": "prisma generate && next build",
     "start": "prisma db push --skip-generate && next start",
     "lint": "next lint",
-    "postinstall": "prisma generate",
     "db:migrate": "prisma db push",
     "db:seed": "node prisma/seed.mjs",
     "prisma:studio": "prisma studio"

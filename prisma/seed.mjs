@@ -43,7 +43,7 @@ function blocksHome(lang) {
 
 async function main() {
   const adminEmail = process.env.ADMIN_EMAIL || "admin@example.com";
-  const adminPassword = process.env.ADMIN_PASSWORD || "change-me-strong";
+  const adminPassword = process.env.ADMIN_PASSWORD || "change-me-strong123";
 
   const existingAdmin = await prisma.user.findUnique({ where: { email: adminEmail } });
   if (!existingAdmin) {

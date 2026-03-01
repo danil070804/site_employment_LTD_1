@@ -22,7 +22,7 @@ export async function generateMetadata({
 
   if (!service || !service.isPublished) return {};
 
-  const base = process.env.AUTH_URL || "http://localhost:3000";
+  const base = process.env.AUTH_URL || "https://siteemploymentltd1-production.up.railway.app";
 
   const title =
     lang === "ru"

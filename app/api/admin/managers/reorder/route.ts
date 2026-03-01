@@ -6,7 +6,7 @@ export const revalidate = 0;
 
 
 export async function POST(req: Request) {
-  const token = await getToken({ req: req as any, secret: process.env.AUTH_SECRET });
+  const token = await getToken({ req: req as any, secret: process.env.NEXTAUTH_SECRET });
   if (!token) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const body = await req.json().catch(() => null);

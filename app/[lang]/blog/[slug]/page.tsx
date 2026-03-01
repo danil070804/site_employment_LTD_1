@@ -26,7 +26,7 @@ export async function generateMetadata({
 
   if (!post || !post.isPublished) return {};
 
-  const base = process.env.AUTH_URL || "http://localhost:3000";
+  const base = process.env.AUTH_URL || "https://siteemploymentltd1-production.up.railway.app";
 
   const title = lang === "ru" ? post.metaTitleRu || post.titleRu : post.metaTitleEn || post.titleEn;
   const desc = lang === "ru" ? post.metaDescRu || post.excerptRu : post.metaDescEn || post.excerptEn;

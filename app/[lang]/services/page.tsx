@@ -15,7 +15,7 @@ export async function generateMetadata({
 }) {
   const { lang: langParam } = await params;
   const lang: Lang = asLang(langParam);
-  const base = process.env.AUTH_URL || "http://localhost:3000";
+  const base = process.env.AUTH_URL || "https://siteemploymentltd1-production.up.railway.app";
 
   return {
     title: t(lang, "Услуги", "Services"),

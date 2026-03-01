@@ -26,16 +26,13 @@ npm i
 ### Env
 Create `.env`:
 ```bash
-DATABASE_URL="postgresql://postgres:DDgKgAtKttCyqnKFYZlcjVmISmwWQcfx@postgres.railway.internal:5432/railway"
-AUTH_SECRET="ZLrK9k1Lq1d+G6V5jVtP3Xv9M0c7WzY8N2Q4rT6u"
-NEXTAUTH_SECRET="ZLrK9k1Lq1d+G6V5jVtP3Xv9M0c7WzY8N2Q4rT6u"
-NEXTAUTH_URL="https://siteemploymentltd1-production.up.railway.app"
-AUTH_URL="https://siteemploymentltd1-production.up.railway.app"
+DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DB?schema=public"
+AUTH_SECRET="replace_with_long_random_string"
+AUTH_URL="http://localhost:3000"
 
 # Admin seed (run once)
 ADMIN_EMAIL="admin@example.com"
-ADMIN_PASSWORD="change-me-strong123"
-`UPLOAD_DIR="/app/public/uploads"
+ADMIN_PASSWORD="change-me-strong"
 ```
 
 ### DB migrate + seed
@@ -49,7 +46,7 @@ npm run db:seed
 npm run dev
 ```
 
-Admin: `https://siteemploymentltd1-production.up.railway.app/admin` (redirects to login)
+Admin: `http://localhost:3000/admin` (redirects to login)
 
 ---
 
